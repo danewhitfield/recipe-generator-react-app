@@ -4,12 +4,182 @@
   box-sizing: border-box;
 }
 
+html {
+  min-height: 100%;
+}
+
 body {
-  height: 100vh;
   width: 100%;
-  background-color: rgb(177, 177, 255);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  background-image: url(https://media.istockphoto.com/photos/empty-wooden-table-top-with-blur-coffee-shop-or-restaurant-interior-picture-id914940152?k=20&m=914940152&s=612x612&w=0&h=XtiEb_mpiFLVPrlgKjw8aTLqxIu-3oMGKfzZ7OuZwkc=);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
 }
 
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ingredient-item {
+  font-size: 16px;
+  text-transform: lowercase;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.ingredient-item:hover {
+  color: red;
+}
+
+button {
+  border-style: none;
+  background-color: transparent;
+  /* height: 30px; */
+  padding: 5px;
+}
+
+li {
+  list-style: none;
+}
+
+.ingredient-li {
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ingredient-li:hover {
+  color: red;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  height: 30px;
+}
+
+.input-box {
+  padding: 5px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.input-box:focus {
+  transform: scale(1.02);
+  outline: none;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.ingredient-title {
+  margin-top: 20px;
+}
+
+.ingredient-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.show-ingredient {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-rows: repeat(1fr); */
+  margin-top: -10px;
+  margin-bottom: 50px;
+  width: 500px;
+  color: #fff;
+}
+
+.header {
+  padding: 10px;
+  margin: 20px;
+}
+
+.show-recipes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.show-recipe-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  margin: 10px;
+  font-size: 16px;
+  text-transform: lowercase;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.733);
+  color: rgb(26, 26, 26);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.show-more-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.down-icon {
+  color: rgb(0, 132, 255);
+  font-size: 12px;
+}
+
+.pizza-icon {
+  color: red;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.submit-btn {
+  transition: transform 0.2s ease-in-out;
+}
+
+.submit-btn:hover {
+  transform: scale(1.4);
+}
+
+.input-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete-btn {
+  width: 30px;
 }
